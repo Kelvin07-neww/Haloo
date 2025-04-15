@@ -1,0 +1,33 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fff;
+}
+
+#jumpscare {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#jumpscare img {
+  max-width: 100%;
+  max-height: 100%;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  25% { transform: translate(-1px, 2px) rotate(-1deg); }
+  50% { transform: translate(-3px, 1px) rotate(1deg); }
+  75% { transform: translate(2px, -1px) rotate(1deg); }
+  100% { transform: translate(1px, 1px) rotate(-1deg); }
+}
